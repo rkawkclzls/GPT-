@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const storySection = document.getElementById('story');
     const dungeonImage = document.getElementById('dungeon-doors');
+    const eventImage = document.getElementById('event-image'); // 이벤트 이미지를 표시할 요소
 
     // 초기 스토리를 GPT API로부터 가져오는 함수
     async function loadInitialStory() {
@@ -28,15 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 이미지(문) 클릭 이벤트 처리
     dungeonImage.addEventListener('click', async () => {
-        // 무작위로 문을 선택하는 것을 가정합니다.
         const doors = ['문 1', '문 2', '문 3'];
         const selectedDoor = doors[Math.floor(Math.random() * doors.length)];
         
         const prompt = `${selectedDoor}가 선택되었습니다. 무슨 일이 일어날까요?`;
         const storyUpdate = await getStoryFromGPT(prompt);
-        storySection.innerHTML = `<p>${storyUpdate}</p>`;
-    });
-
-    // 페이지 로드 시 초기 스토리 로딩
-    loadInitialStory();
-});
+        

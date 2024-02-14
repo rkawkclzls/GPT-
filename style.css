@@ -26,3 +26,12 @@ header h1 {
 #player-status {
     margin-top: 20px;
 }
+
+
+#event-image-section img {
+    width: 30%; /* Set the width to 30% of the container width */
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    display: block; /* Ensure the image is a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Optional: Ensure the image is not bigger than its natural size */
+}
