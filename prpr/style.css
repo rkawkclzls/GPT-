@@ -1,0 +1,97 @@
+:root {
+    --background-color: #f4e3d7;
+    --text-color: #3a2c29;
+    --input-background-color: #fff;
+    --button-background-color: #8a745e;
+    --button-text-color: #fff;
+    --chat-background-color: rgba(253, 244, 227, 0.85);
+    --font-family: 'Times New Roman', Times, serif;
+}
+
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('images/dungeon_tile.jpg');
+    background-repeat: repeat;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.dungeon-container {
+    width: 60%; /* Adjust width as needed */
+    max-width: 800px; /* Maximum width to ensure readability */
+    height: 80vh; /* Set height to 80% of the viewport height for a taller chat window */
+    margin: auto; /* Center the container */
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px; /* Optional for aesthetics */
+    overflow: hidden; /* Ensures the content fits within the borders */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional for aesthetics */
+}
+
+.chat-container {
+    flex-grow: 1; /* Allows the chat container to expand and fill available vertical space */
+    overflow-y: auto; /* Enables scrolling for overflow content */
+}
+
+
+#playerActionForm {
+    display: flex;
+    background-color: var(--input-background-color);
+    padding: 10px;
+}
+
+#playerActionForm input, #playerActionForm button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+#playerActionForm input {
+    flex-grow: 1;
+}
+
+#playerActionForm button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    cursor: pointer;
+}
+
+#playerActionForm button:hover {
+    background-color: darken(var(--button-background-color), 10%);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.action-btn {
+    background-color: #6D7F5F; /* A dark green, suitable for the dungeon theme */
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #5C6D4E;
+}
+

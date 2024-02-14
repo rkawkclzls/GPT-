@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="dungeonContainer" class="dungeon-container center-content">
+        <header>
+            <h1>Dungeon Master's Narrative</h1>
+        </header>
+        <main>
+            <ul id="chatLogs" class="chat-container"></ul>
+        </main>
+        <footer>
+            <form id="playerActionForm" class="input-area" onsubmit="sendMessage(event);">
+                <input type="text" placeholder="Type your action..." />
+                <button type="submit">Send</button>
+            </form>
+            <div class="action-buttons">
+                <button class="action-btn">공격</button>
+                <button class="action-btn">방어</button>
+                <button class="action-btn"></button>
+            </div>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
