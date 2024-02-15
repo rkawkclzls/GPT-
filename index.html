@@ -1,31 +1,107 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dungeon Adventure Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>GPT-Dungeon</h1>
-    </header>
-    <main>
-        <section class="narration">
-            <p>던전에 오신 것을 환영합니다... 당신의 모험이 시작됩니다</p>
-        </section>
-        <section id="dungeon">
-            <img src="./image/dungeon.png" alt="문을 선택하세요" id="dungeon-doors" style="width:100%;">
-        </section>
-        <section id="event-image-section">
-            <img src="" alt="Event Image" id="event-image" style="width:100%; display:none;">
-        </section>
-        <section id="player-status">
-            <h2>Player Status</h2>
-            <p>체력: 100</p>
-            <p>인벤토리: None</p>
-        </section>
-    </main>
-    <script src="script.js"></script>
-</body>
+	<head>
+		<title>GPT-Dungeon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+			<div id="wrapper">
+
+					<nav id="nav">
+						<a href="#" class="fas fa-home"><span>Home</span></a>
+						<a href="https://github.com/rkawkclzls/GPT-Dungeon" class="fa-brands fa-github" style="color: #000000"><span>Easter_Egg</span></a>
+						<a href="#Select" class="fa-solid fa-dungeon"><span>Select</span></a>
+					</nav>
+
+					<div id="main">
+
+							<article id="home" class="panel intro">
+								<header>
+									<h1>GPT-Dungeon</h1>
+									<p>당신의 모험이 시작됩니다<br>
+									<p>시작하시려면 오른쪽 당신을 <strong>클릭</strong>하세요</p>
+
+									
+								</header>
+								<a href="#Select" class="jumplink pic">
+									<span class="arrow icon fa-solid fa-chevron-right"><span>See my portrait</span></span>
+									<img src="images/me.jpg" alt="용사" />
+								</a>
+							</article>
+
+							<article id="Select" class="panel">
+								<header>
+									<h2>Select</h2>
+								</header>
+								<p>
+									진입하고 싶은 던전을 클릭하세요!
+								</p>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#Dungeon" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#Dungeon" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#Dungeon" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#Dungeon" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#Dungeon" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#Dungeon" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#Dungeon" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#Dungeon" class="image fit"><img src="images/pic08.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#Dungeon" class="image fit"><img src="images/pic09.jpg" alt=""></a>
+										
+									</div>
+								</section>
+							</article>
+
+							<article id="Dungeon" class="panel">
+								<header>
+									<h2>Dungeon</h2>
+								</header>
+								<form action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+					</div>
+			</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://kit.fontawesome.com/82e55af5ef.js" crossorigin="anonymous"></script>
+
+	</body>
 </html>
